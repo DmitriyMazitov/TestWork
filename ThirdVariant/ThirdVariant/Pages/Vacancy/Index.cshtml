@@ -1,0 +1,49 @@
+﻿@*@model PagedList.Core.IPagedList<ThirdVariant.Models.Vacancy>*@
+@model Sakura.AspNetCore.IPagedList<ThirdVariant.Models.Vacancy>
+
+@{
+    ViewBag.Title = "Vacancies";
+}
+
+<h2>Vacancies</h2>
+
+
+@using (Html.BeginForm("Index", "Vacancy", FormMethod.Get))
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+
+
+<table>
+    <tr>
+        <th></th>
+        <th>
+            @Html.ActionLink("Vacancy Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            Vacancy Name
+        </th>
+        <th>
+            @Html.ActionLink("PublishedAt", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                    @Html.ActionLink("Details", "Details", new { id=item.Name })
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.vacancy_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.published_at)
+            </td>
+        </tr>
+    }
+
+</table>

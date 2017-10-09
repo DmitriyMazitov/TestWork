@@ -1,0 +1,11 @@
+C:\WORK\ThirdVariant\ThirdVariant\obj\Debug\netcoreapp2.0\ThirdVariant.csprojResolveAssemblyReference.cache
+C:\WORK\ThirdVariant\ThirdVariant\obj\Debug\netcoreapp2.0\ThirdVariant.csproj.CoreCompileInputs.cache
+C:\WORK\ThirdVariant\ThirdVariant\obj\Debug\netcoreapp2.0\ThirdVariant.AssemblyInfoInputs.cache
+C:\WORK\ThirdVariant\ThirdVariant\obj\Debug\netcoreapp2.0\ThirdVariant.AssemblyInfo.cs
+C:\WORK\ThirdVariant\ThirdVariant\bin\Debug\netcoreapp2.0\ThirdVariant.deps.json
+C:\WORK\ThirdVariant\ThirdVariant\bin\Debug\netcoreapp2.0\ThirdVariant.runtimeconfig.json
+C:\WORK\ThirdVariant\ThirdVariant\bin\Debug\netcoreapp2.0\ThirdVariant.runtimeconfig.dev.json
+C:\WORK\ThirdVariant\ThirdVariant\bin\Debug\netcoreapp2.0\ThirdVariant.dll
+C:\WORK\ThirdVariant\ThirdVariant\bin\Debug\netcoreapp2.0\ThirdVariant.pdb
+C:\WORK\ThirdVariant\ThirdVariant\obj\Debug\netcoreapp2.0\ThirdVariant.dll
+C:\WORK\ThirdVariant\ThirdVariant\obj\Debug\netcoreapp2.0\ThirdVariant.pdb

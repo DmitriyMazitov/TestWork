@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ThirdVariant.Models.Vacancy>
+
+
+ 
+<link href="/css/vacancyList.css" rel="stylesheet" type="text/css" />
+    @{
+        ViewBag.Title = "Найденные вакансии";
+    }
+
+    <h2>Найденные вакансии</h2>
+
+
+    @using (Html.BeginForm("Index", "Vacancy", FormMethod.Get))
+    {
+        <p>
+            Поиск по названию: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+            <input type="submit" value="Search" />
+        </p>
+    }
+
+
+    <table>
+        <tr>
+            <th></th>
+            <th>
+                @Html.ActionLink("Наименование вакансии", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Компания", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Дата публикации", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink("Подробно", "Details", new { id = item.id })&nbsp;&nbsp;&nbsp;
+                </td>                
+                <td>
+                    @Html.DisplayFor(modelItem => item.vacancy_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employer_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.published_at)
+                </td>
+            </tr>
+        }
+
+    </table>
+    <br />

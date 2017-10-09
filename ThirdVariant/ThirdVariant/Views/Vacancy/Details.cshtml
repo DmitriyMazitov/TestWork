@@ -1,0 +1,38 @@
+﻿@model Vacancy
+
+<table>
+    <tr>
+        <th>
+            <h1 style="color:black;">@Html.DisplayFor(modelItem => Model.vacancy_name)</h1>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <h3 style="color:blue;">@Html.DisplayFor(modelItem => Model.employer_name)</h3>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <h3 style="color:lightgray;">Уровень зарплаты</h3>
+            <h5 style="color: black;">@Html.DisplayFor(modelItem => Model.salary_from)&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => Model.salary_currency)</h5>
+            <h3 style="color:lightgray;">Город</h3>
+            <h5 style="color: black;">@Html.DisplayFor(modelItem => Model.area_name)</h5>
+            <h3 style="color:lightgray;">Требуемый опыт работы</h3>
+            <h5 style="color: black;">@Html.DisplayFor(modelItem => Model.experience)</h5>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <br />
+            @Html.Raw(Model.description)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <br />
+            <h3 style="color:lightgray;">Тип занятости</h3>
+            <h5 style="color: black;">@Html.DisplayFor(modelItem => Model.schedule)</h5>
+        </th>
+    </tr>
+
+</table>

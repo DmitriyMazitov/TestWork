@@ -1,0 +1,21 @@
+table {
+    width: 1300px;
+    height: auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    padding-right: 10px;
+   
+}
+
+th {
+    padding: 10px;
+   
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
